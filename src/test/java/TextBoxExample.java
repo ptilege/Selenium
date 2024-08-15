@@ -17,7 +17,7 @@ public class TextBoxExample {
 //        ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.setBrowserVersion("122");
 
-        driver = new ChromeDriver();
+        driver = new ChromeDriver( );
         driver.manage().window().maximize();
         driver.get("https://www.leafground.com/input.xhtml");
         Thread.sleep(3000);
@@ -32,7 +32,7 @@ public class TextBoxExample {
 
         //02.Append Country to this city
         WebElement appendText = driver.findElement(By.id("j_idt88:j_idt91"));
-        appendText.sendKeys("India");
+        appendText.sendKeys(" India");
 
         //03.Verify if text box is disabled
         boolean enabled = driver.findElement(By.id("j_idt88:j_idt93")).isEnabled();
